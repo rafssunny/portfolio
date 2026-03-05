@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    color: #e6e6e6;
+    font-family: monospace;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+a {
+    color: #7ee787;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.lang {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #1a1a1a;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.lang:hover {
+    background: #222;
+}
+
+.terminal {
+    font-size: 18px;
+    padding: 100px 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.prompt {
+    color: #7ee787;
+}
+
+.card {
+    border: 1px solid #222;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.card i {
+    font-size: 20px;
+}
+
+.project {
+    border: 1px solid #222;
+    margin-top: 20px;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.footer {
+    border-top: 1px solid #222;
+    padding-top: 30px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.contact a {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+code {
+    color: #7ee787;
+}

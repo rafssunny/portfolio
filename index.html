@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rafssunny</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <button class="lang" onclick="toggleLang()">EN</button>
+
+    <div id="boot" class="terminal container">
+        <span class="prompt">rafa@archlinux ~ $</span> <span id="cmd"></span>
+    </div>
+
+    <div id="site" class="hidden container">
+
+        <section>
+            <h1>Rafael Olegário</h1>
+            <p id="role" data-pt="Professor e Desenvolvedor Back-End" data-en="Teacher and Back-End Developer"></p>
+        </section>
+
+        <section>
+
+            <h2><i class="fa-solid fa-user"></i> <span data-pt="sobre mim" data-en="about me"></span></h2>
+
+            <p data-pt="Sou estudante de Licenciatura em Computação no IFPE, com grande interesse pela área de Computação desde a infância, quando tive meu primeiro contato com programação utilizando C# em um projeto escolar."
+                data-en="Computer Education student at IFPE. My interest in computing started in childhood when I had my first contact with programming using C# in a school project.">
+            </p>
+
+            <br>
+
+            <p data-pt="Iniciei meus estudos em programação em 2023 com foco em Python e desde então continuo aprofundando meus conhecimentos de forma prática."
+                data-en="I started studying programming in 2023 focusing on Python and since then I have been continuously improving my skills through practical development.">
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2><i class="fa-solid fa-code"></i> stack</h2>
+
+            <div class="skills">
+
+                <div class="card">
+                    <h3 data-pt="Linguagens" data-en="Languages"></h3>
+                    <p><i class="devicon-php-plain"></i> PHP</p>
+                    <p><i class="devicon-python-plain"></i> Python</p>
+                    <p><i class="devicon-javascript-plain"></i> JavaScript</p>
+                </div>
+
+                <div class="card">
+                    <h3 data-pt="Frameworks" data-en="Frameworks"></h3>
+                    <p><i class="devicon-laravel-plain"></i> Laravel</p>
+                </div>
+
+                <div class="card">
+                    <h3 data-pt="Bancos de Dados" data-en="Databases"></h3>
+                    <p><i class="devicon-mysql-plain"></i> MySQL</p>
+                </div>
+
+                <div class="card">
+                    <h3 data-pt="Ferramentas" data-en="Tools"></h3>
+                    <p><i class="devicon-git-plain"></i> Git</p>
+                    <p><i class="devicon-apache-plain"></i> Apache</p>
+                    <p><i class="devicon-linux-plain"></i> Linux</p>
+                    <p>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#e6e6e6">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.83.48-5.66-.3-7.66-2.3
+-2-2-2.78-4.83-2.3-7.66L13 12l-0.01 7.93z" />
+                        </svg>
+                        Insomnia
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2><i class="fa-solid fa-brain"></i> <span data-pt="competências" data-en="expertise"></span></h2>
+
+            <div class="card">
+
+                <p data-pt="Conhecimento sólido em lógica de programação."
+                    data-en="Strong knowledge of programming logic."></p>
+
+                <p data-pt="Construção de APIs RESTful com foco em segurança e escalabilidade."
+                    data-en="RESTful API development with focus on security and scalability."></p>
+
+                <p data-pt="Modelagem de banco de dados e escrita de consultas SQL eficientes."
+                    data-en="Database modeling and efficient SQL query writing."></p>
+
+                <p data-pt="Estruturação de aplicações back-end seguindo boas práticas."
+                    data-en="Backend application architecture following best practices."></p>
+
+                <p data-pt="Experiência com ambientes Linux para desenvolvimento."
+                    data-en="Experience with Linux environments for development."></p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2><i class="fa-solid fa-laptop-code"></i> <span data-pt="projetos" data-en="projects"></span></h2>
+
+            <div class="project">
+
+                <div class="project-content">
+
+                    <h3>DailyCode</h3>
+
+                    <p data-pt="Plataforma focada em desafios de programação diários para incentivar prática constante. O sistema possui estatísticas de desempenho dos usuários e uma sessão administrativa com dashboard para gerenciamento da plataforma."
+                        data-en="Platform focused on daily programming challenges to encourage consistent practice. The system includes user performance statistics and an admin section with a dashboard for platform management.">
+                    </p>
+
+                    <br>
+
+                    <p><b>Stack:</b> PHP, HTML, CSS, JavaScript</p>
+
+                    <br>
+
+                    <a href="https://dailycode.page.gd">site</a> |
+                    <a href="https://github.com/rafssunny/dailycode">github</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2><i class="fa-solid fa-terminal"></i> <span data-pt="contato" data-en="contact"></span></h2>
+
+            <p data-pt="Se você procura alguém comprometido com desenvolvimento ou precisa de ajuda com programação, aulas ou mentoria, entre em contato."
+                data-en="If you are looking for someone reliable for development or need programming lessons or mentorship, feel free to contact me.">
+            </p>
+
+            <br>
+
+            <p>Email: <a href="mailto:rafssunny@gmail.com" target="_blank" rel="external">rafssunny@gmail.com</a></p>
+
+            <div class="contact">
+
+                <a href="https://github.com/rafssunny" target="_blank" rel="external"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/rafaolegario8" target="_blank" rel="external"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/rafael-oleg%C3%A1rio-630b573a6" target="_blank" rel="external"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <span><i class="fa-brands fa-discord"></i> rafssunny</span>
+
+            </div>
+
+        </section>
+
+        <div class="footer">
+
+            <p>
+                <span class="prompt">$</span>
+                <span data-pt='echo "construído com simplicidade"' data-en='echo "built with simplicity"'></span>
+            </p>
+
+            <p>
+                Arch philosophy: <code>KISS</code> — <span data-en="Keep It Simple, Stupid"
+                    data-pt="Mantenha a simplicidade, estúpido.">Keep It Simple, Stupid</span>
+                <br>
+                Arch philosophy: <code>DIY</code> — <span data-en="Do It Yourself" data-pt="Faça você mesmo."></span>
+            </p>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
