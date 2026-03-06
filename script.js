@@ -18,7 +18,7 @@ function type() {
 
         cmd.after(bootCursor)
 
-        setTimeout(type, 120)
+        setTimeout(type, 250)
 
     } else {
 
