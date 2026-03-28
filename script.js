@@ -10,79 +10,32 @@ bootCursor.style.animation = "blink 1s infinite"
 cmd.after(bootCursor)
 
 function type() {
-
     if (i < text.length) {
-
         cmd.innerHTML += text.charAt(i)
         i++
-
         cmd.after(bootCursor)
-
         setTimeout(type, 250)
-
     } else {
-
         setTimeout(() => {
-
             document.getElementById("boot").style.display = "none"
-
             const site = document.getElementById("site")
             site.classList.remove("hidden")
 
-            const walker = document.createTreeWalker(site, NodeFilter.SHOW_TEXT, null, false)
-            let nodes = []
+            // Fade-in effect com slide-up
+            const sections = site.querySelectorAll("section")
+            sections.forEach((section, index) => {
+                section.style.opacity = "0"
+                section.style.transform = "translateY(20px)"
 
-            while (walker.nextNode()) {
-                let n = walker.currentNode
-                if (n.nodeValue.trim() !== "") nodes.push(n)
-            }
-
-            nodes.forEach(n => {
-                n._text = n.nodeValue
-                n.nodeValue = ""
+                setTimeout(() => {
+                    section.style.transition = "all 0.6s ease-out"
+                    section.style.opacity = "1"
+                    section.style.transform = "translateY(0)"
+                }, index * 100)
             })
 
-            const cursor = document.createElement("span")
-            cursor.innerHTML = "|"
-            cursor.style.animation = "blink 1s infinite"
-
-            let nodeIndex = 0
-            let charIndex = 0
-
-            function write() {
-
-                if (nodeIndex >= nodes.length) {
-                    site.appendChild(cursor)
-                    return
-                }
-
-                let node = nodes[nodeIndex]
-                let text = node._text
-
-                if (charIndex < text.length) {
-
-                    node.nodeValue += text.charAt(charIndex)
-                    node.parentNode.appendChild(cursor)
-
-                    charIndex++
-                    setTimeout(write, 5)
-
-                } else {
-
-                    nodeIndex++
-                    charIndex = 0
-                    write()
-
-                }
-
-            }
-
-            write()
-
         }, 400)
-
     }
-
 }
 
 type()
@@ -96,13 +49,9 @@ function applyLang() {
 }
 
 function toggleLang() {
-
     lang = lang === "pt" ? "en" : "pt"
-
     document.querySelector(".lang").innerText = lang === "pt" ? "EN" : "PT"
-
     applyLang()
-
 }
 
 applyLang()
